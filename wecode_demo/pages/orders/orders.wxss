@@ -1,0 +1,52 @@
+/* pages/orders/orders.wxss */
+.ordersList{
+  padding:0rpx 20rpx;
+  background: #fff;
+}
+.ordersList + .ordersList{
+  margin-top: 10rpx;
+}
+.ordersListHd{
+    display: flex;
+    height: 60rpx;
+}
+.storeIcon{
+  width:35rpx;
+  margin-right: 10rpx;
+}
+.ordersListHd .storeIcon{
+  margin-top: 15rpx;
+}
+.ordersListHdRight{
+  display: flex; 
+  flex: 1;  
+  flex-direction: row;
+  justify-content: space-between;   
+  align-items: center;
+
+}
+.shopName{font-size: 30rpx; font-weight: bold;}
+.orderState{color: #79bd50; font-size: 26rpx;}
+
+.ordersListBd{
+    display: flex;
+    height: 85rpx;
+    flex: 1;  
+    flex-direction: row;
+    justify-content: space-between;   
+    align-items: center;
+    border-bottom: solid 1rpx #f1f1f1;
+    border-top: solid 1rpx #f1f1f1;
+}
+.price{
+  font-size: 22rpx;
+  color:#ed5656;
+}
+.productName{
+  color:#919191;
+  font-size: 22rpx;
+}
+.ordersListFt{
+  text-align: right;
+  padding:20rpx 0rpx;
+}

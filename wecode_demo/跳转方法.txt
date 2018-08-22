@@ -1,0 +1,12 @@
+wx.navigateTo({
+     
+ url: '../../pages/addressAdd/addressAdd'
+ 
+ })
+
+wx.redirectTo({
+  url: 'test?id=1'
+})
+ wx.switchTab({
+      url: '../../pages/orders/orders'
+    })

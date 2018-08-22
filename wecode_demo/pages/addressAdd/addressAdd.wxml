@@ -1,0 +1,34 @@
+<!--pages/addressAdd/addressAdd.wxml-->
+<view class="container">  
+    <form bindsubmit="confirmAddressTap" bindreset="formReset">
+      <view class="wraps rows  borderBottom">
+          <label class="caption">收货人</label>
+          <input  class="inTxt" name="contactName" value="{{addressData.name}}"  placeholder="收货人姓名"/>
+      </view>    
+      <radio-group name='sex' class="radio-group contentCenter wraps " bindchange="sexChange">
+          <label class="radio" wx:for="{{sexs}}" wx:key="ids">
+              <radio value="{{item.value}}" checked="{{item.value==addressData.sex}}"/>{{item.name}}
+          </label>
+      </radio-group>
+      <view class="wraps rows borderBottom">
+          <label class="caption ">联系电话</label>
+          <input  class="inTxt" name='contactTel' value="{{addressData.tel}}" placeholder="收货人电话"/>
+      </view>
+    
+      <view class="wraps rows">
+          <view class="caption">送货地址</view>
+          <view class="textColumnGroup">
+              <view class="rows borderBottom">                
+                  <input name='street' class="inTxt"  bindfocus="addresInputTap" value="{{addressData.street}}" placeholder="小区/写字楼/学校等"/>
+              </view>
+              <view class="rows">               
+                  <input name='addressDetail'  class="inTxt" bindinput="bindKeyInput" value="{{addressData.detail}}" placeholder="详细地址(门牌号)"/>
+              </view>
+          </view>
+      </view>
+      <view class="wraps groupBtn_inline">
+          <button class="red inlineBtn">删除</button>
+          <button class="green inlineBtn" formType="submit" >确认</button>
+      </view>
+    </form>
+</view>

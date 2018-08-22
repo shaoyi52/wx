@@ -1,0 +1,131 @@
+/* pages/ordersDetail/ordersDetail.wxss */
+
+.block{
+ display:flex;
+ flex:1;
+ flex-direction:row;
+ align-items: center;   
+ background: #fff;
+ padding:26rpx  20rpx 26rpx;
+}
+.block+.block{
+ margin-top: 10rpx;
+}
+/** storeinfo **/
+.storeInfo{
+ display: flex;
+ flex:1;
+ flex-direction:column;
+ align-items: center;
+}
+.storeLog{
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 10rpx;
+    border:solid 1rpx #c6c6c6;
+}
+.ordersState{
+    margin-top: 26rpx;
+    color: #303030;
+    font-size: 30rpx;
+}
+.storeInfoAction{
+    margin-top: 26rpx;
+    display:flex;
+    flex:1;
+    flex-direction:row;
+}
+/**\end storeinfo **/
+
+.contactBlock{
+ display: flex;
+ flex:1;
+ flex-direction:row;
+ align-items: center;
+ font-size:26rpx; 
+}
+.contactInfo{
+    display: flex;
+    flex-direction:column;
+    flex:1;
+    align-items:flex-start;
+    align-content: left;
+
+}
+.contactPeople{
+  color:#303030;
+}
+.contactName{
+ font-size:30rpx;
+ font-weight: bold; 
+}
+.addressInfo{
+color:#ababab;
+height: 42rpx;
+line-height: 42rpx;
+white-space:nowrap;
+text-overflow:ellipsis;
+overflow:hidden;
+
+}
+
+.sendTimeBlock{
+display:flex;
+flex:1;
+flex-direction:row;
+align-items:center;
+font-size:26rpx;
+}
+
+.blockInfoWrap{  
+  display:flex; 
+  flex: 1;  
+  flex-direction: row;
+  justify-content: space-between;   
+  align-items: center;
+  font-size:26rpx;
+  color:#ababab;
+  }
+  .blockItem{
+     color:#303030;  
+  }
+
+.productStore{
+    display:flex;
+    align-items:center;
+    height:75rpx;
+    font-size:26rpx;
+    color:#303030;
+    font-weight:bold;
+}
+
+.productBlock{
+ flex-direction:column;
+ align-items:initial;
+}
+.productList{
+ display:flex; 
+ flex:1;     
+ flex-direction:column; 
+}
+.productInfo,.sendPrice{
+display:flex; 
+flex:1;  
+height: 67rpx;
+border-top:1rpx solid #f1f1f1;
+flex-direction:row;
+justify-content: space-between;   
+align-items: center;
+font-size: 22rpx;
+color:#919191;
+}
+.amountOfMoney{
+    text-align: right;
+    color:#303030;
+    font-size:26rpx;
+}
+.sumPrice{color:#ed5656;}
+
+.marginL50{margin-left:50rpx;}
+
+

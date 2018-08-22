@@ -1,0 +1,60 @@
+/* pages/addressAdd/addressAdd.wxss */
+.bg{
+  position: relative;
+  width: 100%;
+  background:#fff; 
+  box-sizing: border-box;
+  padding:28rpx; 
+}
+
+.wraps{
+    padding: 30rpx 26rpx;
+    font-size: 24rpx;
+}
+.rows{
+    display: flex;
+    direction: row;    
+    align-items: center;
+    background: #fff;
+}
+.caption{
+    width: 120rpx
+}
+.inTxt{
+     flex:1; 
+}
+.borderBottom{
+  border-bottom: solid 2rpx #e2e2e2;   
+}
+.textColumnGroup{
+    flex:1;   
+    flex-direction: column;
+}
+.contentCenter{
+    display: flex;
+    justify-content: center;
+}
+.radio+.radio{
+    margin-left: 50rpx;
+}
+.groupBtn_inline{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+}
+.groupBtn_inline button{
+    flex:1;
+    height: 80rpx;
+}
+.inlineBtn + .inlineBtn{
+    margin-left: 26rpx;
+}
+button.red{
+    background: #ed5656;
+    color: #fff;
+}
+button.green{
+    background: #79bd50;
+    color: #fff;
+}

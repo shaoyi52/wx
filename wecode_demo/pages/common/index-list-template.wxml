@@ -1,0 +1,28 @@
+<template name="index-list">
+  <view class="wx-index-content">
+    <view class="wx-index-list" wx:key="ids"  wx:for="{{result}}" bindtap="toBusinessDetails" data-id="{{item.shopId}}">
+      <image class="wx-index-left" src="{{item.shopHead}}"></image>
+      <view class="wx-index-right">
+        <text class="wx-index-title">{{item.shopName}}</text>
+        <view class="wx-index-right-center">
+          <view class="wx-image-content">
+            <view class="wx-image">
+              <image src="../../image/wx_start_gray.png"></image>
+            </view>
+            <view class="wx-select-start" style="width:{{item.appraise*20}}%">
+              <image src="../../image/wx_start.png"></image>
+            </view>
+          </view>
+
+          <text style="margin:0 10rpx;color:#f00">{{item.appraise}}</text>
+          <text style="color:#5e5e5e">月销售{{item.oddNumber}}单</text>
+        </view>
+        <text style="color:#5e5e5e">主营：{{item.main}}</text>
+      </view>
+      <view class="wx-index-top-left">
+        <text style="">{{item.distance}}km</text>|<text style="color:#7BBE53;margin-left:5rpx">{{item.deliveryTime}}分钟</text>
+      </view>
+    </view>
+
+  </view>
+</template>

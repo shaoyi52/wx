@@ -1,0 +1,94 @@
+<!--pages/confirmOrder/confirmOrder.wxml-->
+<view class="container">
+  <view class="contactBlock block">
+    <image class="_icon addrIcon" src="../../image/ad_icon.png" />
+    <view class="contactInfo" bindtap="selectAddresTap">
+      <view class="contactPeople">
+        <text class="contactName">蒙迪欧</text>
+        <text class="sex marginL50">先生</text>
+        <text class="tel marginL50">13765232356</text>
+      </view>
+      <view class="addressInfo">
+        广东省深圳市罗湖区宝安南路2169号红桂南路..
+      </view>
+    </view>
+    <image class="_icon rightArrowIcon" src="../../image/arrowright.png" />
+  </view>
+  <view class="sendTimeBlock block" bindtap="sendTime" >
+    <image class="_icon addrIcon" src="../../image/time_icon.png" />
+    <view class="blockInfoWrap">
+      <text class="blockItem">送达时间</text>      
+      <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickerSelected">
+        <text>{{array[index]}}</text>
+    </picker>
+    </view>
+  </view>
+  <view class="payBlock block"  bindtap="actionSheetTap">
+    <image class="_icon addrIcon" src="../../image/m_icon.png" />
+    <view class="blockInfoWrap">
+      <text class="blockItem">支付方式</text>
+      <text>{{actionSheetItems[payId].payStyle}}</text>
+    </view>
+  </view>
+  <view class="productBlock block">
+    <view class="productStore">
+      <image class="_icon addrIcon" src="../../image/store_icon.png" />
+      <text>小米姑娘</text>
+    </view>
+    <view class="productList">
+      <view class="productInfo">
+        <text>东北大米</text>
+        <view>×1
+          <text class="marginL50">￥3.5</text>
+        </view>
+      </view>
+      <view class="productInfo">
+        <text>东北大米</text>
+        <view>×1
+          <text class="marginL50">￥3.5</text>
+        </view>
+      </view>
+      <view class="productInfo">
+        <text>东北大米</text>
+        <view>×1
+          <text class="marginL50">￥3.5</text>
+        </view>
+      </view>
+      <view class="productInfo">
+        <text>东北大米</text>
+        <view>×1
+          <text class="marginL50">￥3.5</text>
+        </view>
+      </view>
+    </view>
+    <view class="sendPrice">
+      <text>配送费</text>
+      <text>￥2</text>
+    </view>
+    <view class="amountOfMoney">
+      <text>共计3件商品</text>总计：
+      <text class="sumPrice">￥24.50</text>
+    </view>
+  </view> 
+
+  <view class="bottomFix">
+    <text class="payMoney">待支付￥24.50</text>
+    <view class="submitButton" bindtap="submitOrder">提交订单</view>
+  </view>
+</view>
+
+<!--支付方式弹层-->
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <view class="modelHd">
+        <text>选择支付方式</text><image  class="_icon" src="../../image/close_icon.png"/>
+    </view>
+    <block wx:for-items="{{actionSheetItems}}"  wx:for-index="idx"  wx:key="itemsKey">
+        <action-sheet-item class="item" data-pay-Type="{{idx}}" bindtap="bind">
+        <view class="payRows">
+        <image  class="_icon" src="{{item.icon}}"/>
+        <view class="payRows_right"><text>{{item.payStyle}}</text><image  class="_icon" src="{{idx==payId?'../../image/selected_icon.png':'../../image/unSelect_icon.png'}}"/></view>
+        </view>        
+        </action-sheet-item>
+    </block>   
+</action-sheet>
+

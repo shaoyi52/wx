@@ -1,0 +1,66 @@
+<!--pages/addressManage/addressManage.wxml-->
+<view class="container ">
+    <!--empty page-->
+    <view class="content_center {{addressData==null? '':'hide' }}">
+        <View class="addressEmpt_wrap">
+            <image class="emptyAddress"  mode="widthFix" src="../../image/noAddress_icon.png"></image>  
+            <text class="emptyCar_tips">您还没有收货地址，点击底部按钮添加~~</text>
+        </View>
+    </view>
+
+    <view class="addressLayer {{addressData==null? 'hide':'' }}">
+        <view class="addressWrap block">
+            <view class="addressRows">
+                <image class="_icon addrIcon" src="../../image/selected_icon.png" />
+                <view class="contactInfo">
+                    <view class="contactPeople">
+                        <text class="contactName">蒙迪欧</text>
+                        <text class="sex marginL50">先生</text>
+                        <text class="tel marginL50">13765232356</text>
+                    </view>
+                    <view class="addressInfo">
+                        广东省深圳市罗湖区宝安南路2169号红桂南路红桂南路红桂南路红桂南路
+                    </view>
+                </view>
+                <image class="_icon rightArrowIcon" src="../../image/arrowright.png" />
+            </view>   
+            <view class="addressRows">
+                <image class="_icon addrIcon" src="../../image/unSelect_icon.png" />
+                <view class="contactInfo">
+                    <view class="contactPeople">
+                        <text class="contactName">蒙迪欧</text>
+                        <text class="sex marginL50">先生</text>
+                        <text class="tel marginL50">13765232356</text>
+                    </view>
+                    <view class="addressInfo">
+                        广东省深圳市罗湖区宝安南路2169号红桂南路红桂南路红桂南路红桂南路
+                    </view>
+                </view>
+                <image class="_icon rightArrowIcon" src="../../image/arrowright.png" />
+            </view>             
+        </view>
+        <view class="addressTipsCaption"> 
+        超出配送范围 </view>
+        <view class="addressWrap block">
+            
+            <view class="addressRows">
+                            
+                <view class="contactInfo noIcon">
+                    <view class="contactPeople">
+                        <text class="contactName">蒙迪欧</text>
+                        <text class="sex marginL50">先生</text>
+                        <text class="tel marginL50">13765232356</text>
+                    </view>
+                    <view class="addressInfo">
+                        广东省深圳市罗湖区宝安南路2169号红桂南路红桂南路红桂南路红桂南路
+                    </view>
+                </view>
+                <image class="_icon rightArrowIcon" src="../../image/arrowright.png" />
+            </view>             
+        </view>
+    </view>
+   
+</view>
+<view class="bottomFix" bindtap="addAddress">
+    新增收货地址
+</view>

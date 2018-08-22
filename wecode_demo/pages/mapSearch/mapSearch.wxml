@@ -1,0 +1,67 @@
+<!--pages/mapSearch/mapSearch.wxml-->
+
+<view class="section searchWrap">
+  <input class="searchTxt" bindinput="searchAddress"  maxlength="10" placeholder="输入搜索地址" />
+</view>
+<view class="wrap blockCaption">
+    当前地址<text>{{addressRlt}}</text>
+</view>
+<view class="wrap rows addressToPosition" >
+   <view class="wx-location-address" bindtap="selectAddress" data-allBackInfo="{{allBackInfo}}">{{currentAddress}}</view>
+   <view class="wx-location" bindtap="getCurrenAdrress">
+   <image class="_icon" src="../../image/position.png"></image> 定位当前位置</view>
+</view>
+<view class="searchAddressLayer  {{searchData==null?'hide':''}}">
+    <view class="wrap blockCaption ">
+        搜索地址
+    </view>
+    <view class="blockContent">
+        <view class="addressRows wrap" bindtap="addressTap" wx:for="{{searchData}}" wx:for-index="idx" wx:key="idx" wx:for-item="item"  data-item="{{item}}" >
+            <view class="addressName">{{item.title}}</view>
+            <view class="addressDetail">{{item.address}}</view>
+        </view>
+       
+    </view>
+</view>
+<view class="sendAddressLayer  {{sendAddressData==null?'hide':''}}">
+    <view class="wrap blockCaption ">
+        收货地址
+    </view>
+    <view class="wrap blockContent rows">
+        <view class="contactInfo">
+            <view class="contactPeople">
+                <text class="contactName">蒙迪欧</text>
+                <text class="sex marginL50">先生</text>
+                <text class="tel marginL50">13765232356</text>
+            </view>
+            <view class="addressInfo">
+                广东省深圳市罗湖区宝安南路2169号红桂南路红桂南路红桂南路红桂南路
+            </view>
+        </view>
+        <view class="contactInfo">
+            <view class="contactPeople">
+                <text class="contactName">蒙迪欧</text>
+                <text class="sex marginL50">先生</text>
+                <text class="tel marginL50">13765232356</text>
+            </view>
+            <view class="addressInfo">
+                广东省深圳市罗湖区宝安南路2169号红桂南路红桂南路红桂南路红桂南路
+            </view>
+        </view>
+    </view>
+</view>    
+
+<view class="nearAddressLayer  {{nearAdressData==null?'hide':''}}">
+    <view class="wrap blockCaption ">
+        附近地址
+    </view>
+    <view class="blockContent" >
+        <view class="wrap nearAddress " wx:for="{{nearAdressData}}" wx:for-index="idx" wx:key="idx" wx:for-item="item" bindtap="addressTap"  data-item="{{item}}" >
+            <text>{{item.title}}</text>       
+        </view>
+        <!--
+        <view class="wrap nearAddress">
+            <text>庆邦大厦</text>       
+        </view>-->
+    </view>
+</view>

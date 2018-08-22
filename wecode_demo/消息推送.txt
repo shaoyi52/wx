@@ -1,0 +1,25 @@
+获取access token()
+引用：https://mp.weixin.qq.com/wiki/11/0e4b294685f817b95cbed85ba5e82b8f.html
+
+https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET
+
+AppID(小程序ID)：wxf3e6680d23ab258~
+AppSecret(小程序密钥)：f297e14a2a0bf248c5dd908b17ca00~
+
+获取ACCESS_TOKEN
+
+https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxf3e6680d23ab258~&secret=f297e14a2a0bf248c5dd908b17ca00~
+
+发起请求
+https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxconnectsocketobject
+
+发送模板消息
+https://api.weixin.qq.com/cgi-bin/message/wxopen/template/send?access_token=ACCESS_TOKEN
+
+POST
+
+touser：	接收者（用户）的 openid
+template_id：IbpzHVmi2d7QlXasgbjSdeShv9lMvOwVDlv-5D_lNSQ   所需下发的模板消息的id
+data：       模板内容，不填则下发空模板
+
+form_id：表单提交场景下，为 submit 事件带上的 formId；支付场景下，为本次支付的 prepay_id 

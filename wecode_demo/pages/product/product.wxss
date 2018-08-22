@@ -1,0 +1,166 @@
+/**index.wxss**/
+.greybg{background: #f1f1f1;position: absolute;top:0px;left:0px;bottom:0px;width:100%;display: -webkit-box;display: -moz-box;-webkit-box-orient: vertical;-moz-box-orient: vertical;}
+
+.shop-info{
+  background: #79BD50;
+  height: 222rpx;
+  width:100%;
+ font-family: 'STHeitiSC-Medium';
+ position: relative;
+ font-size:20rpx
+}
+
+.empty-view{-moz-box-flex: 1;-webkit-box-flex: 1;box-flex:1;width:100%;}
+.shop-head-img{width:152rpx;height:152rpx;margin-left:19rpx;margin-top:31rpx;display: inline-block}
+.shop-head-img image{width:100%;height:100%;border-radius: 6rpx}
+.shop-right{margin-left:22rpx;display: inline-block;height: 152rpx;margin-top: 31rpx;color:#fff;width:557rpx;}
+.shop-name{font-size:32rpx;margin-top:6rpx;line-height: 32rpx;font-family: 'SimHei';font-weight: bold}
+.shop-peison{margin-top: 19rpx;line-height: 20rpx}
+.our-main{margin-top: 54rpx;line-height: 20rpx}
+.shop-distance{position: absolute;right:21rpx;top:41rpx;color:#fff;}
+.comment-view{height:71rpx;width:100%;justify-content:flex-end;line-height: 71rpx;font-size:20rpx;background: #fff;position:relative;color:#303030}
+.comment-word{margin-right: 14rpx}
+	.arrows{margin-right:21rpx;  line-height:0rpx;margin-top: 21rpx; }
+	.arrows image{      
+   width:18rpx;height:30rpx
+   }
+   .classname-percent{position: absolute;left:22rpx;top:25rpx;line-height: 0}
+    .classname-percent text{font-size:20rpx;color:#ED5656;margin-left: 25rpx;font-family: 'STHeitiSC-Medium';line-height: 0rpx;}
+.content-percent{width:117rpx;overflow: hidden;position: relative;height:22rpx;display: inline-block}
+ .wrap-percent{overflow: hidden;width:100%;height:22rpx;position: absolute;}
+
+.classname-percent image{width:117rpx;height:22rpx;position: absolute;left:0;}
+   .shop-content{background:#fff}
+
+.classify-left {
+  width: 162rpx;
+  height: 100%;
+  display: inline-block;
+  flex-direction: column;
+  background: #e4e2e2;
+  font-size:26rpx;
+}
+
+.classify-item {
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.1rpx solid #dfdbdb;
+  position: relative;
+  font-family: 'STHeitiSC-Medium';
+}
+
+.classify-item.active {
+  background: #fff;
+  font-family: 'SimHei';
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #79bd50;
+}
+
+.classify-item.active::before {
+  display: block;
+  width: 5rpx;
+  height: 62rpx;
+  background: #79bd50;
+  content: '';
+  position: absolute;
+  top: 19rpx;
+}
+/**列表样式*/
+.wrap-classify{width:588rpx;}
+.classify-scroll{
+-moz-box-flex: 1;-webkit-box-flex: 1;box-flex:1;width:100%;
+}
+.classify-list{
+	flex-direction: row;
+	font-size:21rpx;
+	display: flex;
+	color:#5e5e5e;
+	line-height: 21rpx;
+	height:221rpx;
+	overflow: hidden;
+  -webkit-box-flex: 1;
+  position: relative;
+}
+.wrap-item{margin: 40rpx 0;width:282rpx;}
+.wrap-item .item-info{margin-top:17rpx;font-size:20rpx;line-height: 20rpx}
+.wrap-item .item-info:first-child{font-size:32rpx;line-height: 32rpx;margin-top:0;font-weight: bold}
+.wrap-item .item-info:last-child{font-size:26rpx;line-height: 26rpx;margin-top:37rpx}
+.item-info .text-over{width:282rpx;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block}
+.item-image{width:140rpx;height:140rpx;margin: 40rpx 24rpx;display: inline-block;border-radius:4rpx; overflow: hidden;border:0.7rpx solid #c6c6c6;box-sizing: border-box}
+.classify-list .add-to-cart{height:100%;position: absolute;top:136rpx;right:21rpx;}
+.add-to-cart view{display: inline-block;line-height: 0;height:44rpx;width:44rpx;}
+.add-to-cart .add-num-text{line-height: 44rpx;height:44rpx;width:50rpx;text-align: center;font-size:26rpx; }
+.add-to-cart image{width:44rpx;height:44rpx;}
+.item-image image{width:100%;height:100%}
+.item-price{font-size:48rpx;color:#ed5656;font-family:arial;line-height: 44rpx}
+.item-money{font-size:26rpx}
+/**列表样式end*/
+
+
+
+.shopping-cart{height:95rpx;width:100%;background: #777777;position: relative}
+.wrap-cart{width:100%;height:95rpx;background: #777777; z-index:22323;position: relative}
+.cart-num{width:61rpx;height:61rpx;border-radius: 100%;background: #79bd50;margin:17rpx 0 0 20rpx;position: relative}
+.cart-num image{width:40rpx;height:40rpx;margin-left:12rpx;margin-top:12rpx;}
+.cart-num.greybg{background:#999}
+ .num1{font-size:18rpx;min-width:30rpx;height:30rpx;border-radius: 100%;position: absolute;top:-8rpx;background: #ed5656;color:#fff;right:-12rpx;text-align: center;line-height:30rpx;border:3rpx solid #777777}
+.cart-money{font-size:26rpx;color:#fff;margin:18rpx 0 0 31rpx;line-height: 30rpx}
+.cart-money view text{font-size:36rpx;font-weight: bold}
+.empty-num{font-size:26rpx;color:#c6c6c6;margin-left: 31rpx;line-height: 95rpx}
+.wrap-cart{width:100%;height:95rpx;background: #777777; z-index:22323;position: relative}
+.shopping-cart .button{position: absolute;right:0;width:209rpx;height:95rpx;background: #79bd50;color:#Fff;text-align: center;line-height: 95rpx;font-size:30rpx;font-family:'STHeitiSC-Medium'}
+.shopping-cart .button.grey{background: #ffffff;background:#c6c6c6}
+
+.cart-pop{position: absolute;bottom:95rpx;width:100%;background: #fff}
+.cart-title{text-indent:19rpx;font-family: 'SimHei';height:74rpx;background: #79BD50;color:#fff;line-height: 74rpx;font-size:30rpx;position: relative}
+.empty-cart{position: absolute;right:20rpx;top:0;line-height: 74rpx;color:#fff;font-size:26rpx;font-family: 'STHeitiSC-Medium';width:103rpx;text-align: right}
+.empty-cart image{width:30rpx;height:30rpx;line-height: 0;position: absolute;right:68rpx;top:50%;margin-top: -15.5rpx}
+
+.cart-list{max-height:540rpx;}
+.cart-item{height:90rpx;line-height: 90rpx;font-size:28rpx;color:#303030;position: relative;width:100vw;box-sizing: border-box;}
+.cart-item:last-child{border:0}
+.cart-name{text-indent: 20rpx;width: 440rpx;overflow: hidden;text-overflow:ellipsis;display: block; white-space: nowrap;}
+.cart-item .cart-pirce text{font-size:21rpx}
+.cart-item .cart-pirce{width:140rpx;color:#ED5656;}
+.cart-item .add-to-cart{right:21rpx;top:23rpx;position: absolute}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

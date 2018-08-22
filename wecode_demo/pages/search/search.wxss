@@ -1,0 +1,84 @@
+/* pages/search/search.wxss */
+@import "../common/index-common.wxss";
+.search-top{
+    height:110rpx;
+    background: #79BD50;
+}
+.section{
+    padding-top:18rpx;
+}
+.search-top input{
+    height:74rpx;
+    width:696rpx;
+    background: #fff;
+    margin:0px 27rpx;
+    border-radius:10rpx;
+    font-size:28rpx;
+    text-align: center
+}
+.input-placeholder{
+    color:#777;
+}
+
+.search-top .section icon{
+   position: absolute;
+   top:40rpx;
+   color:#fff;
+   z-index: 999;
+   margin-left:210rpx;
+}
+.search-section{
+    display: block;
+    width:750rpx;
+    height:100vh;
+    background-color: #f1f1f1;
+}
+.search-history .history-firsy{
+   height:72rpx;
+   margin-left:19rpx;
+   font-size:26rpx;
+   color:#777;
+   line-height: 72rpx;
+   position: relative;
+    
+}
+.search-history .history-firsy image{
+    height:30rpx;
+    width:30rpx;
+    position: absolute;
+    right:20rpx;
+    top:20rpx;
+}
+.search-history .history-second{
+    background: #fff;
+    padding-top:21rpx;
+    /*height:96rpx;*/
+
+}
+.history-second text{
+    height:54rpx;
+    font-size:26rpx;
+    display:inline-block;
+    border-radius: 10rpx;
+    color:#303030;
+    line-height: 54rpx;
+    padding:0 12rpx;
+    border:1px solid #C6C6C6;
+    margin-right:11rpx;
+    margin-left:19rpx;
+    margin-bottom:21rpx;
+   
+}
+.search-none image{
+    width:244rpx;
+    height:244rpx;
+    margin:200rpx 247rpx 0 259rpx
+}
+.search-description{
+    margin-top:30rpx;
+    font-size: 30rpx;
+    margin-left:104rpx;
+    margin-right:91rpx;
+    text-align: center;
+    line-height: 50rpx;
+}

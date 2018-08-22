@@ -1,0 +1,51 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/orders/orders",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/product/product",
+    
+
+     "pages/confirmOrder/confirmOrder",
+    "pages/addressManage/addressManage", 
+    "pages/addressAdd/addressAdd",
+   
+    "pages/ordersDetail/ordersDetail",
+    "pages/mapSearch/mapSearch"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#79BD50",
+    "navigationBarTitleText": "聚龙生鲜",
+    "navigationBarTextStyle":"white"
+  },
+   "tabBar": {
+    "color": "#888",
+    "selectedColor": "#79BD50",
+    "backgroundColor": "#fff",
+    "borderStyle": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "image/icon-index.png", 
+      "selectedIconPath": "image/icon-index-active.png"
+    },{
+      "pagePath": "pages/orders/orders",
+      "text": "订单",
+      "iconPath": "image/icon-order.png",
+      "selectedIconPath": "image/icon-order-active.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "image/icon-mine.png",
+      "selectedIconPath": "image/icon-mine-active.png"
+    }
+   
+    ] 
+   }
+}

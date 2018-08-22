@@ -1,0 +1,44 @@
+<view class="col-view">
+
+  <!--<view class="wrap-login">
+    <view class="login-word">
+      <view>一键式社区服务</view>
+      完善您的社区生活，让您的生活更加便利</view>
+    <view class="common-btn login-btn">登陆/注册</view>
+  </view>-->
+  <view class="wrap-login1">
+    <view class="head-img"><image src="../../image/head.png"></image></view>
+    <view class="head-name">爱吃鱼的汪</view>
+
+  </view>
+  <view class="user-info">
+    <view class="user-item row-view" bindtap="goToAdddress1">
+      <view class="user-icon vertical">
+        <image src="../../image/address.png" class="address-image"></image>
+      </view>
+      <view class="user-word">收货地址管理</view>
+      <view class="user-direction vertical">
+        <image src="../../image/direction.png"></image>
+      </view>
+    </view>
+    <view class="user-item row-view">
+      <view class="user-icon vertical">
+        <image src="../../image/contact.png" class="contact-image"></image>
+      </view>
+      <view class="user-word">客服中心</view>
+      <view class="user-direction vertical">
+        <image src="../../image/direction.png"></image>
+      </view>
+    </view>
+    <view class="user-item row-view">
+      <view class="user-icon vertical">
+        <image src="../../image/aboutus.png" class="us-image"></image>
+      </view>
+      <view class="user-word">关于我们</view>
+      <view class="user-direction vertical">
+        <image src="../../image/direction.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="common-btn esc-btn">退出登录</view>
+</view>

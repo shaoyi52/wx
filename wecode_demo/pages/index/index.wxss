@@ -1,0 +1,112 @@
+/**index.wxss**/
+@import "../common/index-common.wxss";
+.section_gap{
+  background: #fff;
+}
+.top-class {
+  height: 155rpx;
+  background: #79bd50;
+  width: 100%;
+  /*padding:16rpx 28rpx 19rpx;*/
+}
+
+.top-class .wx-location {
+  color: #fff;
+  font-size: 24rpx;
+  display: flex;
+  line-height: 45rpx;
+  width: 694rpx;
+  height: 70rpx;
+  margin-left: 28rpx;
+}
+
+.top-class .wx-location .img1 {
+  width: 28rpx;
+  height: 38rpx;
+  margin-top: 5rpx;
+}
+
+.top-class .wx-location-name {
+  margin-left: 10rpx;
+  font-size: 34rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width:400rpx;
+  position: relative;
+  padding-right:10px;
+}
+.top-class .wx-location-name text{
+    width: 0;
+    height: 0;
+    border-left: 10rpx solid transparent;
+    border-right: 10rpx solid transparent;
+    border-top: 15rpx solid #fff;
+    position: absolute;
+    z-index: 999;
+    right:0rpx;
+    top:15rpx;
+}
+
+.top-class .wx-location .img3 {
+  width: 44rpx;
+  height: 44rpx;
+  position: absolute;
+  right: 28rpx;
+}
+
+.top-class .wx-sm {
+  margin-top: 22rpx;
+  margin-left: 27rpx;
+}
+
+.top-input {
+  margin-left: 28rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  width: 694rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #777;
+  font-size: 26rpx;
+}
+
+.hover-input {
+  background: #f8f8f8;
+}
+
+.top-input icon {
+  vertical-align: middle;
+  margin-top: 24rpx;
+}
+
+.top-class .wx-info {
+  margin-left: 22rpx;
+}
+
+.wx-cates {
+  height: 80rpx;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 80rpx;
+}
+
+.wx-cates text {
+  font-size: 28rpx;
+  margin: 0 16rpx;
+  color: #ababab;
+  padding-bottom: 5rpx;
+ 
+}
+
+.wx-cates .on {
+  border-bottom: 1px solid #79bd50;
+  color: #303030;
+   transform: translateX(100rpx);
+}
+
+.wx-index-content {
+  padding: 0;
+  margin: 0;
+}

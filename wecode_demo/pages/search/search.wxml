@@ -1,0 +1,40 @@
+<!--pages/search/search.wxml-->
+
+<view class="search-section">
+  <!--top-->
+  <view class="search-top">
+    <view class="section">
+      <icon wx:if="{{ifSearch}}" type="search" size="14" />
+      <input placeholder-class="input-placeholder" placeholder="搜索商家、商品名称" auto-focus bindinput="bindInput"  value="{{searchValue}}" />
+    </view>
+  </view>
+
+  <!--search-content-->
+  <view class="search-content" wx:if="{{ifSearch}}">
+    <view class="search-history" wx:if="{{isHide}}" >
+      <view class="history-firsy">
+        历史搜索
+        <view bindtap="removeHistory"><image  src="../../image/wx_del.png"></image></view>
+      </view>
+      <view class="history-second">
+        <text wx:key="ids" wx:for="{{historyDatas}}" data-searchName="{{item}}" bindtap="searchFn">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+  <import src="../common/index-list-template.wxml"  />
+
+  <!--search-content-->
+  <view class="" wx:if="{{!ifSearch}}">
+    <view wx:if="{{ifDatas}}">
+      <view style="height:10rpx;background:#f1f1f1"></view>
+      <template is="index-list" data = "{{result}}" />
+    </view>
+    <view wx:if="{{!ifDatas}}" class="search-none">
+      <image src="../../image/wx_search_none.png"></image>
+      <view class="search-description">
+       抱歉，没有找到与"{{searchValue}}"相关的商品
+       您可以换个词试试
+      </view>
+    </view>
+  </view>
+</view>

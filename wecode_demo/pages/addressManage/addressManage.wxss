@@ -1,0 +1,79 @@
+/* pages/addressManage/addressManage.wxss */
+
+
+/***emptypage start**/
+.addressEmpt_wrap{
+   display: flex;
+   flex-direction: column;
+   height: 100vh; 
+   justify-content: center;
+   align-items:center;  
+   width:750rpx;
+
+}
+.emptyAddress{  
+  width:243rpx;
+  height:243rpx;
+  margin-top: -47rpx;
+}
+.emptyCar_tips{
+  display: block;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+}
+.hide{
+  display:none;
+}
+/***emptypage end**/
+
+
+.addressWrap{
+    padding:0 26rpx;
+    background: #fff;
+}
+.addressRows{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size:26rpx;
+    padding:20rpx 0;
+}
+.addressRows .noIcon{
+    padding-left: 36rpx;
+}
+.contactInfo{
+    display: flex;
+    flex-direction:column;
+    flex:1;
+    align-items:flex-start;
+    align-content: left;
+
+}
+.addressTipsCaption{
+    padding: 24rpx 26rpx;
+}
+.contactPeople{
+  color:#303030;
+}
+.contactName{
+ font-size:30rpx;
+ font-weight: bold; 
+}
+.addressInfo{
+ margin-top: 15rpx;   
+ color:#ababab;
+}
+.bottomFix{
+   position: fixed;
+   height: 94rpx;
+   display: flex;  
+   bottom: 0rpx;
+   left:0rpx;
+   width: 750rpx;  
+   background: #79bd50; 
+   color:#fff;
+   font-size: 30rpx;
+   align-items: center;
+   justify-content: center;
+    
+}

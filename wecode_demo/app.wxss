@@ -1,0 +1,182 @@
+/**app.wxss
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+**/
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.line {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.gray-bg {
+  background: #f3f4f6;
+}
+
+
+
+/*******linwz*******/
+.border-botttom{border-bottom:1px solid #f1f1f1}
+.border-botttom2{border-bottom:1px solid #e2e2e2}
+.wx-active{color:#79bd50!important}
+.row-view{
+   flex-direction: row;
+  white-space: nowrap;
+ display: flex;
+}
+.col-view{
+   flex-direction:column;
+ display: flex;
+}
+.vertical{display: -webkit-box;-webkit-box-orient: vertical;-webkit-box-pack: center;
+-webkit-box-align: center; }
+.common-btn{height:80rpx;margin: 0px auto;text-align: center;background:#79BD50;line-height: 80rpx;color:#fff;font-size:30rpx;border-radius: 8rpx}
+/*加载中**/
+.wrap-spinner{white-space:nowrap;justify-content: center;flex-direction:row;display: flex;background: #efefef;height: 60rpx;line-height: 60rpx}
+.loading{
+  text-align: center;
+  color: #999;
+  font-size:30rpx;
+  margin-right: 10rpx;
+}
+.spinner > view {
+  width: 24rpx;
+  height: 24rpx;
+  background-color: #79bd50; 
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  /* Prevent first frame from flickering when animation starts */
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  overflow: hidden;
+  margin:0 6rpx;
+}
+ 
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+ 
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+ 
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+/**加载中结束**/
+
+/*******linwz*******/
+
+
+/*********yuzhoufen**************/
+
+.container { 
+  height: 100vh;
+  background-color: #F1F1F1;  
+  justify-content:center;  
+  box-sizing: border-box;
+  
+}
+
+.content_center{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content:center;  
+  box-sizing: border-box;
+}
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+.line {
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.gray-bg {
+  background: #f3f4f6;
+}
+
+.page{
+  min-height:100%;
+  flex:1;  
+  font-size: 32rpx;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+  overflow: hidden;
+}
+.page_hd{
+  padding:50rpx,50rpx,100rpx,50rpx;   
+}
+.home{ width: 750rpx;}
+
+page{
+  background-color: #F1F1F1;
+}
+.marginL50{margin-left:50rpx;}
+.button{
+  font-size: 26rpx;  
+  color:#79bd50; 
+  background: #fff; 
+  display: inline-block;
+  padding:0rpx 28rpx;
+  border-radius: 10rpx; 
+  border:solid 1rpx #79bd50;
+  overflow: hidden;
+}
+.button::after{  
+border:none;
+}
+.button.gray{
+  color:#c6c6c6;
+  border-color:#c6c6c6;
+}
+.button.orange{
+  color:#ffb937;
+  border-color:#ffb937;
+}
+.button+.button{
+  margin-left: 20rpx;
+}
+._icon{
+width: 38rpx;
+height: 38rpx;
+margin-right: 10rpx;
+}
+
+/*********\yuzhoufen************/

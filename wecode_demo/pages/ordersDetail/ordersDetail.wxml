@@ -1,0 +1,105 @@
+
+<!--订单详情-->
+<view class="container">
+  <view class="storeInfo block">
+    <image class="storeLog" src="https://placeholdit.imgix.net/~text?txtsize=12&txt=130%C3%97130&w=130&h=130" />
+    <text class="ordersState">等待商家接单</text>
+    <view class="storeInfoAction">
+      <button class="button">联系商家</button>
+      <button class="button">取消订单</button>
+    </view>
+  </view>
+  <view class="contactBlock block">
+    <image class="_icon addrIcon" src="../../image/ad_icon.png" />
+    <view class="contactInfo">
+      <view class="contactPeople">
+        <text class="contactName">蒙迪欧</text>
+        <text class="sex marginL50">先生</text>
+        <text class="tel marginL50">13765232356</text>
+      </view>
+      <view class="addressInfo">
+        广东省深圳市罗湖区宝安南路2169号红桂南路..
+      </view>
+    </view>
+    <image class="_icon rightArrowIcon" src="../../image/arrowright.png" />
+  </view>
+  <view class="sendTimeBlock block">
+    <image class="_icon addrIcon" src="../../image/time_icon.png" />
+    <view class="blockInfoWrap">
+      <text class="blockItem">送达时间</text>
+      <text>尽快送达 | 预计15分钟</text>
+    </view>
+  </view>
+  <view class="productBlock block">
+    <view class="productStore">
+      <image class="_icon addrIcon" src="../../image/store_icon.png" />
+      <text>小米姑娘</text>
+    </view>
+    <view class="productList">
+      <view class="productInfo">
+        <text>东北大米</text>
+        <view>×1
+          <text class="marginL50">￥3.5</text>
+        </view>
+      </view>
+      <view class="productInfo">
+        <text>东北大米</text>
+        <view>×1
+          <text class="marginL50">￥3.5</text>
+        </view>
+      </view>
+      <view class="productInfo">
+        <text>东北大米</text>
+        <view>×1
+          <text class="marginL50">￥3.5</text>
+        </view>
+      </view>
+      <view class="productInfo">
+        <text>东北大米</text>
+        <view>×1
+          <text class="marginL50">￥3.5</text>
+        </view>
+      </view>
+    </view>
+    <view class="sendPrice">
+      <text>配送费</text>
+      <text>￥2</text>
+    </view>
+    <view class="amountOfMoney">
+      实付：
+      <text class="sumPrice">￥24.50</text>
+    </view>
+  </view>
+  <view class="payBlock block">
+    <image class="_icon addrIcon" src="../../image/m_icon.png" />
+    <view class="blockInfoWrap">
+      <text class="blockItem">支付方式</text>
+      <text>货到付款</text>
+    </view>
+  </view>
+  <view class="sendTypeBlock block">
+    <image class="_icon addrIcon" src="../../image/send_icon.png" />
+    <view class="blockInfoWrap">
+      <text class="blockItem">配送方式</text>
+      <text>店家配送</text>
+    </view>
+  </view>
+  <view class="orderNum block">
+    <image class="_icon addrIcon" src="../../image/order_icon.png" />
+    <view class="blockInfoWrap">
+      <text class="blockItem">订单编号</text>
+      <text>65523220170101</text>
+    </view>
+  </view>
+  <view class="orderTime block">
+    <image class="_icon addrIcon" src="../../image/time_icon.png" />
+    <view class="blockInfoWrap">
+      <text class="blockItem">下单时间</text>
+      <text>2017-06-05 15：30：01</text>
+    </view>
+  </view>
+</view>
+
+
+
+<!--<text>pages/ordersDetail/ordersDetail.wxml</text>-->

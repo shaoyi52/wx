@@ -1,0 +1,18 @@
+page{background:#F1F1F1}
+.wrap-login{width:100%;height: 270rpx}
+.wrap-login1{width:100%;height: 270rpx;background:#79BD50}
+.head-img{margin-top:31rpx;text-align: center;line-height: 0}
+.head-img image{width:162rpx;height:162rpx;border-radius: 100%}
+.head-name{font-size:30rpx;text-align: center;line-height: 30rpx;color:#303030;margin-top:18rpx}
+.login-word{font-size:22rpx;text-align: center;line-height:30rpx;color:#737373;margin-top: 58rpx;}
+.login-btn{width:366rpx;margin-top:20rpx!important;}
+.user-info{margin-top:9rpx}
+.user-icon{margin-left:20rpx;line-height: 0;}
+.user-word{margin-left:25rpx;flex: 1;}
+.user-direction{line-height: 0;margin-right:20rpx}
+.user-direction image{width:18rpx;height:30rpx}
+.user-item{height:90rpx;background: #fff; border-bottom: 0.1rpx solid #f1f1f1;line-height: 90rpx;font-size:30rpx;justify-content:space-between}
+.address-image{width:34rpx;height:38rpx;}
+.contact-image{width:34rpx;height:36rpx;}
+.us-image{width:34rpx;height:34rpx;}
+.esc-btn{margin-top: 51rpx;width:711rpx}

@@ -1,0 +1,148 @@
+
+<!--index.wxml-->
+<view class="greybg">
+
+  <!--店铺信息-->
+  <view class="shop-info row-view">
+    <view class="shop-head-img">
+      <image src="{{shopInfo.shopHead}}"></image>
+    </view>
+    <view class="shop-right col-view">
+      <view class="shop-name">{{shopInfo.shopName}}</view>
+      <view class="shop-peison">{{shopInfo.modeOfDistribution}} | {{shopInfo.minimumPirce}}元起送 | 配送费:{{shopInfo.freight>0?shopInfo.freight+'元':'免费'}}</view>
+      <view class="our-main">主营：{{shopInfo.main}}</view>
+    </view>
+    <view class="shop-distance">{{shopInfo.distance}} | 平均{{shopInfo.DeliveryTime}}</view>
+  </view>
+  <view class="comment-view row-view">
+    <view class="classname-percent">
+      <view class="content-percent">
+        <view class="wrap-percent">
+          <image src="../../image/grey.jpg"></image>
+        </view>
+        <view class="wrap-percent" style="width:{{shopInfo.appraise/5*100}}%">
+          <image src="../../image/selectStart.jpg"></image>
+        </view>
+      </view>
+      <text>{{shopInfo.appraise}}</text>
+    </view>
+    <view class="comment-word">{{shopInfo.appraisePerson}}人评论
+    </view>
+    <view class="arrows">
+      <image src="../../image/direction.png"></image>
+    </view>
+  </view>
+
+  <!--店铺信息结束-->
+  <view class="empty-view"></view>
+
+  <!--商品信息-->
+  <view class="shop-content row-view" style="height:{{setHeight}}px">
+
+    <!--商品左侧一级菜单-->
+    <scroll-view class="classify-left" scroll-y="true" style="height:{{setHeight}}px">
+      <view class="classify-item" wx:key="ids" wx:for="{{menunav.menuitem}}" bindtap="setMenu" class="classify-item {{menunav.menutab==index?'active':''}}" data-tabindex="{{index}}">{{item.text}}</view>
+    </scroll-view>
+
+    <!--商品左侧一级菜单结束-->
+
+    <!--商品右侧二级菜单-->
+    <scroll-view scroll-y="true" class="classify-scroll" style="height:{{setHeight}}px">
+      <view class="classify-list border-botttom" wx:key="ids"  wx:for="{{commodity}}">
+        <view class="item-image">
+          <image src="{{item.commodityImg}}"></image>
+        </view>
+        <view class="wrap-item flex-space">
+          <view class="item-info h2">
+            <text>{{item.commoditName}}</text>
+          </view>
+          <view class="item-info">
+            <text class="text-over">简介：{{item.introduce}}</text>
+          </view>
+          <view class="item-info">
+            <text class="item-price">
+              <text class="item-money">￥</text>{{item.commodityPrice}} </text>元/{{item.unit}}
+          </view>
+        </view>
+        <view class="add-to-cart row-view">
+          <view class="dec" wx:if="{{item.commodityNum>0}}" bindtap="decCommodity" data-index="{{index}}">
+            <image src="../../image/dec.png"></image>
+          </view> 
+          <view class="add-num-text" wx:if="{{item.commodityNum>0}}">{{item.commodityNum}}</view>
+          <view class="add" bindtap="addCommodity" data-index="{{index}}">
+            <image src="../../image/add.png"></image>
+          </view>
+        </view>
+      </view>
+     
+
+      <!--加载中-->
+      <view class="wrap-spinner">
+        <view class="loading">加载中</view>
+        <view class="spinner">
+          <view class="bounce1"></view>
+          <view class="bounce2"></view>
+          <view class="bounce3"></view>
+        </view>
+      </view>
+
+      <!--加载中结束-->
+    </scroll-view>
+
+    <!--商品右侧二级菜单结束-->
+  </view>
+
+  <!--商品结束-->
+
+  <!--购物车信息-->
+  <view class="shopping-cart row-view">
+    <view class="wrap-cart row-view">
+      <view class="cart-num {{cartNum==0?'greybg':''}}" bindtap="actionSheetTap" >
+        <image src="../../image/cart1.png"></image>
+        <view class="num1" wx:if="{{cartNum>0}}">{{cartNum}}</view>
+      </view>
+      <view class="cart-money" wx:if="{{sumMoney>0}}">
+        <view>￥
+          <text>{{sumMoney}}</text> 
+        </view>
+        <text wx:if="{{shopInfo.freight>0}}">需配送费{{shopInfo.freight}}元</text>
+      </view>
+      <view class="empty-num" wx:if="{{sumMoney==0}}">购物车为空</view>
+      <view class="button {{sumMoney==0?'grey':''}}" wx:if="{{sumMoney>=shopInfo.minimumPirce}}" bindtap="balanceTap">去结算</view>
+      <view class="button grey" wx:if="{{sumMoney<shopInfo.minimumPirce}}">还差{{shopInfo.minimumPirce-sumMoney}}元起送</view>
+    </view>
+  </view>
+</view>
+
+<!--购物车信息结束-->
+
+<!--购物车商品列表弹出框-->
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+  <view class="cart-pop">
+    <view class="cart-title">
+      购物车
+      <view class="empty-cart">
+        <image src="../../image/delete.png"></image>
+        清空
+      </view>
+    </view>
+    <scroll-view class="cart-list col-view" scroll-y="true">
+      <view class="cart-item border-botttom row-view" wx:key="ids" wx:for="{{IDS}}">
+        <view class="cart-name">{{cartList[item].commoditName}}</view>
+        <view class="cart-pirce"><text>￥</text>{{cartList[item].commodityPrice}}</view>
+        <view class="add-to-cart row-view"> 
+          <view class="dec" bindtap="cartDec" data-index="{{index}}">
+            <image src="../../image/dec.png"></image>
+          </view>
+          <view class="add-num-text">{{cartList[item].commodityNum}}</view>
+          <view class="add"  bindtap="cartAdd" data-index="{{index}}">
+            <image src="../../image/add.png"></image>
+          </view>
+        </view>
+      </view>
+    
+    </scroll-view>
+  </view>
+</action-sheet>
+
+<!--购物车商品列表弹出框结束-->

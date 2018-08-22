@@ -1,0 +1,69 @@
+
+<!--index.wxml-->
+<import src="../common/index-list-template.wxml" />
+
+<!--top-->
+<view class="top-class">
+  <view class="wx-location">
+      <image class="img1" src="../../image/wx_location.png"></image>
+      <view class="wx-location-name" bindtap = "shippingAdd" >{{address}}<text></text></view>
+      
+   
+    <view class="" bindtap = "scanCode" >
+    <image class="img3" src="../../image/wx_sm.png"></image>
+    </view>
+    
+  </view>
+  <view class="top-input" bindtap = "search" hover-class="hover-input">
+    <icon type="search" size="14" /> 搜索商家、商品名称
+  </view>
+</view>
+
+<!--banner-->
+<view class="wx_swiper"   >
+  <swiper style="height:279rpx" indicator-dots="{{swiperParam.indicatorDots}}" autoplay="{{swiperParam.autoplay}}" interval="{{swiperParam.interval}}" duration="{{swiperParam.duration}}">
+    <block  wx:key="{{ids}}" wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item.img}}" class="slide-image" style="width:750rpx;height:279rpx" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!--category-->
+<!--<view class="section section_gap">
+  <scroll-view class="wx-cates" scroll-x="true">
+    <text class="{{currentTab==item.freshId ? 'on' : ''}}" wx:key="{{ids}}"  wx:for="{{catePros}}"  data-currentTab='{{item.freshId}}' bindtap="cateClick">{{item.freshName}}</text>
+  
+  </scroll-view>
+</view>
+<view class="wx_gray"></view>-->
+
+<!--content-->
+ <view class="wx-nearby-set"><view  class="wx-nearby"> 附近商家</view></view>
+ <view class="classname-line"></view>
+<template is="index-list" data = "{{result}}" wx:if="{{result.length > 0}}" />
+
+<view class="loading" wx:if="{{isShow}}">
+<view class="spinner">
+      <view class="bounce1"></view>
+      <view class="bounce2"></view>
+      <view class="bounce3"></view>
+    </view>
+<!--<image style="width:32rpx;height:32rpx" src="../../image/loading.gif" />-->
+</view>
+
+<view class="loading" wx:if="{{noData}}" style="font-size:24rpx;"  >—附近无商家—</view>
+ <!--加载中-->
+  <view class="wrap-spinner" wx:if="{{showLoadMore}}">
+    <view class="loading">加载中</view>
+    <view class="spinner">
+      <view class="bounce1"></view>
+      <view class="bounce2"></view>
+      <view class="bounce3"></view>
+    </view>
+  </view>
+  <view class="wrap-spinner" wx:if="{{showComplete}}">
+    <view class="loading">没有更多了</view>
+  </view>
+  <!--加载中结束-->

@@ -1,0 +1,86 @@
+.wx_gray {
+  border-top: 1rpx solid #e2e2e2;
+  background: #f1f1f1;
+  height: 5rpx;
+}
+.wx-index-list {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 34rpx 20rpx;
+  position: relative;
+  height: 126rpx;
+  font-size: 24rpx;
+  background: #fff;
+}
+
+.wx-index-list .wx-index-left {
+  width: 130rpx;
+  height: 130rpx;
+  position: absolute;
+  left: 24rpx;
+  color: #5e5e5e;
+  border-radius: 5rpx;
+}
+
+.wx-index-list .wx-index-right {
+  position: absolute;
+  left: 178rpx;
+  display: inline-block;
+}
+
+.wx-index-list .wx-index-right .wx-index-title {
+  font-size: 31rpx;
+  color: #303030;
+  font-weight: bold;
+}
+
+.wx-index-list .wx-index-right .wx-index-right-center {
+  line-height: 58rpx;
+  font-size:24rpx;
+  display:flex;
+}
+.wx-index-list .wx-index-right .wx-index-right-center .wx-image{
+   width:115rpx;
+  height:20rpx;
+}
+.wx-index-list .wx-index-right .wx-index-right-center .wx-image-content{
+  width:115rpx;
+  height:20rpx;
+  position: relative;
+}
+.wx-index-list .wx-index-right image {
+  width:115rpx;
+  height:20rpx;
+}
+
+.wx-index-list .wx-index-top-left {
+  position: absolute;
+  right: 20rpx;
+  top: 24rpx;
+  font-size: 24rpx;
+  color: #b1b1b1;
+}
+.wx-nearby-set{
+  /*text-align: center;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size:28rpx;
+  border-bottom:1px solid #E2E2E2;*/
+  background: #fff;
+}
+.wx-nearby{
+  text-align: center;
+  height:80rpx;
+  line-height: 80rpx;
+  font-size:28rpx;
+  margin:0 20rpx;
+  border-bottom:1px solid #E2E2E2;
+  background: #fff;
+}
+.wx-index-list .wx-index-right .wx-select-start{
+  position:absolute;
+  left:-1rpx;
+  top:0rpx;
+  margin-top:-1rpx;
+  width:100%;
+  overflow: hidden
+}

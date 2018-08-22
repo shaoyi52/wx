@@ -1,0 +1,104 @@
+/* pages/mapSearch/mapSearch.wxss */
+/*comm*/
+.wrap{
+    padding-left: 26rpx;
+    padding-right: 26rpx;
+    font-size: 26rpx;
+}
+.blockCaption{
+    padding-top: 25rpx;
+    padding-bottom: 25rpx;
+}
+.blockContent{
+    padding-top: 26rpx;
+    background:#fff;
+}
+
+.rows{
+    background: #fff;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+}
+.hide{
+  display:none;
+}
+/*搜索框*/
+.searchWrap{
+    padding: 18rpx 26rpx;
+    background: #79bd50;
+}
+.searchTxt{
+    width: 690rpx;
+    height: 74rpx;
+    background: #fff;
+    border-radius: 10rpx;
+    text-align: center;
+    font-size: 26rpx;
+}
+
+/*地址定位*/
+.addressToPosition{
+    position: relative;
+    height:55rpx;
+    line-height: 55rpx;
+}
+.addressToPosition .wx-location-address{
+    display: inline-block;
+}
+.addressToPosition .wx-location{
+  position: absolute;
+  right:10rpx;
+  top:20rpx;
+  width:200rpx;
+  text-align: right
+}
+.addressToPosition .wx-location image{
+  position: absolute;
+  left:5rpx;
+  top:8rpx;
+}
+/*搜索地址*/
+.addressRows{
+border-bottom: solid 2rpx #e2e2e2;
+padding-bottom: 26rpx;
+}
+.addressName{
+    color:#303030;
+    padding:16rpx 0;
+}
+.addressDetail{
+   color:#ababab;
+}
+/*收货地址*/
+.contactInfo{
+    display: flex;
+    flex-direction:column;
+    flex:1;
+    align-items:flex-start;
+    align-content: left;
+    padding:20rpx 0;
+
+
+}
+.addressTipsCaption{
+    padding: 24rpx 26rpx;
+}
+.contactPeople{
+  color:#303030;
+}
+.contactName{
+ font-size:30rpx;
+ font-weight: bold; 
+}
+.addressInfo{
+ margin-top: 15rpx;   
+ color:#ababab;
+}
+/*附近地址*/
+.nearAddress{
+ font-size: 28rpx;
+ color:#303030;
+ padding-top:30rpx;
+ padding-bottom: 30rpx;
+ border-bottom: solid 2rpx #e2e2e2;
+}

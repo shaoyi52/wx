@@ -1,0 +1,28 @@
+<!--pages/orders/orders.wxml-->
+<view class="container">  
+    <!--订单列-->
+    <view class="ordersList">
+        <view class="ordersListHd">
+            <image  class="storeIcon" src="../../image/storeIcon.png" mode="widthFix"/>
+            <view class="ordersListHdRight"><text class="shopName">小米姑娘</text><text class="orderState" >等待商家接单</text></view>
+        </view>
+        <view class="ordersListBd" bindtap="orderDetailBtn">
+            <view class="productName">东北大米等3件2商品</view><view class="price">￥24.50</view>
+        </view>
+        <view class="ordersListFt">
+           <button  class="button orange">再来一单</button> <button  class="button gray">取消订单</button>
+        </view>
+    </view>
+    <view class="ordersList">
+        <view class="ordersListHd">
+            <image  class="storeIcon" src="../../image/storeIcon.png" mode="widthFix"/>
+            <view class="ordersListHdRight"><text class="shopName">小米姑娘</text><text class="orderState" >等待商家接单</text></view>
+        </view>
+        <view class="ordersListBd">
+            <view class="productName">东北大米等3件2商品</view><view class="price">￥24.50</view>
+        </view>
+        <view class="ordersListFt">
+           <button  class="button orange">再来一单</button> <button  class="button gray">取消订单</button>
+        </view>
+    </view>
+</view>
